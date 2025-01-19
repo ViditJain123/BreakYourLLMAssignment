@@ -1,3 +1,4 @@
+// MainDetailCard.jsx
 import React from 'react'
 
 // Helper function to return Tailwind text color classes
@@ -21,8 +22,8 @@ function MainDetailCard({ heading, value, high }) {
   const colorClass = getColorClass(value, high)
 
   return (
-    <div className="max-w-xs p-4 border border-gray-200 rounded-lg flex flex-col items-center text-center">
-      <p className="text-sm text-gray-500">
+    <div className="max-w-xs p-4 border border-gray-200 dark:border-gray-700 rounded-lg flex flex-col items-center text-center bg-white dark:bg-gray-800 dark:text-gray-100 transition-colors duration-300">
+      <p className="text-sm text-gray-500 dark:text-gray-400">
         {heading}
       </p>
       <h2 className={`mt-2 text-2xl font-semibold ${colorClass}`}>

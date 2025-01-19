@@ -1,3 +1,4 @@
+// PreviousResults.jsx
 import React, { useState } from 'react'
 import assignmentData from '../assets/assignment_data.json'
 
@@ -23,72 +24,72 @@ function PreviousResults() {
   const isMatchingTestResults = testResults.uuid === selectedRunUuid
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 text-gray-800 dark:text-gray-100 transition-colors duration-300">
       {/* ------------------ Previous Runs Table ------------------ */}
       <div className="overflow-x-auto mb-6">
-        <table className="min-w-full divide-y divide-gray-200">
+        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
           {/* Table Head */}
-          <thead className="bg-gray-50 border-b border-black">
+          <thead className="bg-gray-50 dark:bg-gray-700 border-b border-black dark:border-gray-600">
             <tr>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Select
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 UUID
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Project Name
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Run Date
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Run Time
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Run By
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Run Duration
               </th>
               <th
                 scope="col"
-                className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
               >
                 Description
               </th>
             </tr>
           </thead>
           {/* Table Body */}
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
             {previousTestRuns.map((run) => (
               <tr key={run.uuid}>
                 <td className="px-4 py-2 text-center">
                   <input
                     type="radio"
                     name="selectedRun"
-                    className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+                    className="h-4 w-4 text-blue-600 border-gray-300 dark:border-gray-600 focus:ring-blue-500"
                     onChange={() => handleRadioChange(run.uuid)}
                     checked={selectedRunUuid === run.uuid}
                   />
@@ -108,21 +109,23 @@ function PreviousResults() {
         </table>
       </div>
 
-      {/* ------------------ Test Results Section with white background ------------------ */}
+      {/* ------------------ Test Results Section ------------------ */}
       {isMatchingTestResults && (
-        <div className="bg-white p-4 rounded shadow">
+        <div className="bg-white dark:bg-gray-800 p-4 rounded shadow transition-colors duration-300">
           {/* Title with UUID */}
-          <h2 className="text-xl font-bold mb-4">Test Results: {testResults.uuid}</h2>
+          <h2 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">
+            Test Results: {testResults.uuid}
+          </h2>
 
           {/* Dropdowns in the same line for medium screens and above */}
           <div className="mb-4 flex flex-col md:flex-row gap-4">
             {/* Main Question Dropdown */}
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
+              <label className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">
                 Select Main Question
               </label>
               <select
-                className="border border-gray-300 rounded p-2 w-full"
+                className="border border-gray-300 dark:border-gray-600 rounded p-2 w-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 transition-colors duration-300"
                 value={selectedMainQuestion}
                 onChange={(e) => setSelectedMainQuestion(e.target.value)}
               >
@@ -137,11 +140,11 @@ function PreviousResults() {
 
             {/* Paraphrased Question Dropdown */}
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
+              <label className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">
                 Select Paraphrased Question
               </label>
               <select
-                className="border border-gray-300 rounded p-2 w-full"
+                className="border border-gray-300 dark:border-gray-600 rounded p-2 w-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 transition-colors duration-300"
                 value={selectedParaphrasedQuestion}
                 onChange={(e) => setSelectedParaphrasedQuestion(e.target.value)}
               >
@@ -160,24 +163,26 @@ function PreviousResults() {
           {/* Test Cases Table (only shown if both dropdowns are selected) */}
           {selectedMainQuestion && selectedParaphrasedQuestion && (
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 mt-4">
-                <thead className="bg-gray-50 border-b border-black">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 mt-4">
+                <thead className="bg-gray-50 dark:bg-gray-700 border-b border-black dark:border-gray-600">
                   <tr>
-                    <th className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                       Case
                     </th>
-                    <th className="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                       Response
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="bg-white dark:bg-gray-800">
                   {testResults.test_cases.map((outerArr, i1) =>
                     outerArr.map((innerArr, i2) =>
                       innerArr.map((caseObj, i3) => (
                         <tr key={`${i1}-${i2}-${i3}`}>
-                          <td className="px-4 py-2 text-center">{caseObj.case}</td>
-                          <td className="px-4 py-2 whitespace-normal break-words">
+                          <td className="px-4 py-2 text-center text-gray-700 dark:text-gray-200">
+                            {caseObj.case}
+                          </td>
+                          <td className="px-4 py-2 whitespace-normal break-words text-gray-700 dark:text-gray-200">
                             {caseObj.response}
                           </td>
                         </tr>
