@@ -1,0 +1,779 @@
+{
+    "file": "data.csv",
+    "unit_tests": [
+        {
+            "question": "Q) What should be the dose of eliquis for DVT/PE?",
+            "guideline": "-> Should specify the dosage of the medicine: \n        a) Standard dosages for adults and children\n        b) Dose adjustments for specific disease conditions\n        c) Dosing in special populations (elderwly, pregnant women, etc.\"",
+            "test_cases": [
+                {
+                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE."
+                },
+                {
+                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE."
+                },
+                {
+                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment."
+                },
+                {
+                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment."
+                },
+                {
+                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions."
+                },
+                {
+                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE."
+                },
+                {
+                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE."
+                },
+                {
+                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE."
+                }
+            ],
+            "paraphrased_question": [
+                {
+                    "question": "What is the recommended dosage of Eliquis for treating DVT or PE?",
+                    "execution_result": [
+                        {
+                            "answer": "The recommended dosage of Eliquis for treating deep vein thrombosis (DVT) or pulmonary embolism (PE) is as follows:\n\n- **First 7 days**: Two 5-mg tablets twice a day.\n- **After 7 days**: One 5-mg tablet twice a day.\n\nTo reduce the risk of recurrent DVT/PE after at least 6 months of initial treatment, the dosage is one 2.5-mg tablet twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\n**Side Effects of Eliquis:**\n\n- **Common side effects**: Eliquis can cause bleeding, which can be serious and, in rare cases, may lead to death. Symptoms include unexpected bleeding, unusual bleeding from the gums, nosebleeds, or heavier than normal menstrual bleeding. You may also bruise more easily, and it may take longer for any bleeding to stop [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\n- **Rare but serious adverse reactions**: Severe bleeding that is difficult to control, red or black stools, coughing up or vomiting blood, unexpected pain, swelling, or joint pain, headaches, dizziness, or weakness [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\n- **Black box warnings**: Eliquis is a blood thinner and can cause bleeding, which can be serious and rarely may lead to death [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response specifies the standard dosage of Eliquis for adults with DVT/PE, not for children. It does not provide dosage information specifically for children."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with renal impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only provides dosage recommendations for DVT/PE treatment and potential side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only provides the standard dosage for treating DVT/PE and reducing the risk of recurrent DVT/PE, along with side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis specifically for elderly patients with DVT/PE. It only provides general dosage recommendations without addressing any age-specific considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information and side effects for treating DVT/PE, without addressing the specific case of pregnancy."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides the general dosage for treating DVT/PE and mentions possible side effects and warnings. There is no specific information about lactating women in the response."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The recommended dosage of Eliquis (apixaban) for treating Deep Vein Thrombosis (DVT) or Pulmonary Embolism (PE) is as follows:\n\n- **First 7 days**: Two 5-mg tablets taken twice a day.\n- **After 7 days**: One 5-mg tablet taken twice a day.\n\nFor reducing the risk of recurrent DVT/PE after at least 6 months of initial treatment, the dosage is one 2.5-mg tablet taken twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\n**Side Effects of Eliquis**:\n- **Common side effects** include easy bruising and prolonged bleeding time.\n- **Rare but serious adverse reactions** can include severe bleeding, which may lead to death. Symptoms of severe bleeding include unexpected bleeding, red or black stools, and vomiting blood [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The recommended dosage for DVT/PE treatment with Eliquis is incorrect. The standard dosage for the first 7 days is typically two 10-mg tablets taken twice a day, not two 5-mg tablets. After 7 days, the dosage is one 5-mg tablet taken twice a day. Therefore, the response does not match the standard dosing guidelines."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response specifies the standard dosage of Eliquis for treating DVT/PE in adults, not for children. The test specifically asked for the dosage for children, which is not addressed in the response."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include any information on dose adjustments of Eliquis for patients with renal impairment. It only covers the general dosage for treating DVT/PE and the reduction of recurrent DVT/PE risk, as well as common side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only provides the standard dosages for DVT/PE treatment and information on side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only covers the standard dosage for DVT/PE treatment and common side effects."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify any dosage adjustments or considerations specifically for elderly patients with DVT/PE. It only provides general dosage information for all patients."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information and side effects without addressing pregnancy-specific considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides the general dosage for treating DVT/PE and reducing the risk of recurrence, without addressing any specific considerations for lactating women."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The recommended dosage of Eliquis for treating Deep Vein Thrombosis (DVT) or Pulmonary Embolism (PE) is as follows:\n\n- **First 7 days**: Two 5-mg tablets twice a day.\n- **After 7 days**: One 5-mg tablet twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/vte/taking-eliquis).\n\nFor reducing the risk of recurrent DVT/PE after initial therapy of at least 6 months, the dosage is one 2.5-mg tablet twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/vte/taking-eliquis).\n\n**Side Effects of Eliquis**:\n- **Common side effects**: Eliquis can cause bleeding, which may be serious and, in rare cases, lead to death. Symptoms include unexpected bleeding, prolonged bleeding, and easy bruising [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n- **Rare but serious adverse reactions**: Severe bleeding that cannot be controlled, red or black stools, and vomiting blood [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n- **Black box warnings**: Eliquis is a blood thinner and can cause serious bleeding events [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for children with DVT/PE. It only provides information about the dosage for adults and general side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with renal impairment. It only covers the standard dosage for treating DVT/PE and reducing the risk of recurrent DVT/PE, as well as side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include any information on dose adjustments of Eliquis for patients with hepatic impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only contains general dosage information for DVT/PE treatment and risk reduction, as well as side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis specifically for elderly patients with DVT/PE. It provides general dosage information for treating DVT/PE without addressing any age-specific considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information and does not address pregnancy-specific considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It provides general dosage information but does not address lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The recommended dosage of Eliquis for treating Deep Vein Thrombosis (DVT) or Pulmonary Embolism (PE) is as follows:\n\n- **First 7 days**: Two 5-mg tablets twice a day.\n- **After 7 days**: One 5-mg tablet twice a day.\n\nFor reducing the risk of recurrent DVT/PE after at least 6 months of initial treatment, the dosage is one 2.5-mg tablet twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/vte/taking-eliquis).\n\n**Side Effects of Eliquis:**\n- **Common side effects** include unexpected bleeding or bleeding that lasts a long time, such as unusual bleeding from the gums or nosebleeds that happen often [Chunk 2](https://www.eliquis.bmscustomerconnect.com/vte/taking-eliquis).\n- **Rare but serious adverse reactions** may include severe bleeding that you cannot control, red or black stools, coughing up or vomiting blood, unexpected pain, swelling, or joint pain, and headaches or feeling dizzy or weak [Chunk 2](https://www.eliquis.bmscustomerconnect.com/vte/taking-eliquis).\n\n**Note**: For each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response specifies the dosage of Eliquis for adults with DVT/PE, not for children. The test requires information specifically about the dosage for children, which is not provided in the answer."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with renal impairment. It only provides the standard dosage for DVT/PE and information on side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include any information regarding dose adjustments of Eliquis for patients with hepatic impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only provides standard dosing for DVT/PE treatment and side effects."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify a different dosage of Eliquis for elderly patients with DVT/PE. It only provides the general recommended dosage without any age-specific adjustments."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information for treating DVT/PE and reducing the risk of recurrence, without addressing pregnancy considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides general dosage information and side effects without addressing lactation specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The recommended dosage of Eliquis for treating Deep Vein Thrombosis (DVT) or Pulmonary Embolism (PE) is as follows:\n\n- **First 7 days**: Two 5-mg tablets taken twice a day.\n- **After 7 days**: One 5-mg tablet taken twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\nFor reducing the risk of recurrent DVT/PE after the initial therapy of at least 6 months, the dosage is one 2.5-mg tablet taken twice a day [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\n**Side Effects of Eliquis:**\n\n- **Common side effects**: Bruising more easily and it may take longer than usual for any bleeding to stop [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n- **Rare but serious adverse reactions**: Serious bleeding, which can rarely lead to death. Symptoms include unexpected bleeding, severe bleeding, red or black stools, and vomiting blood [Chunk 2](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/taking-eliquis.html).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The recommended dosage for the first 7 days is incorrect. The correct initial dosage for Eliquis in treating DVT/PE is 10 mg twice daily for the first 7 days, not two 5-mg tablets. The answer provides incorrect dosage information."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response provided specifies the standard dosage of Eliquis for adults with DVT/PE, not for children. The test requires information specific to pediatric dosing, which is not addressed in the response."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The provided answer does not include information on dose adjustments of Eliquis for patients with renal impairment. It only covers the general dosage for DVT/PE treatment and mentions side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only provides general dosage information for DVT/PE treatment, risk reduction, and side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only covers the standard dosing for DVT/PE and common side effects."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for elderly patients with DVT/PE. It provides the general recommended dosage without addressing any age-specific adjustments or considerations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information for treating DVT/PE and reducing the risk of recurrent DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The provided response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides general dosage information for treating DVT/PE and reducing the risk of recurrence, as well as side effects, but does not address lactating women specifically."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "How much Eliquis should be administered for a case of DVT/PE?",
+                    "execution_result": [
+                        {
+                            "answer": "The question is about the dosage of Eliquis for a case of DVT/PE, which falls under category 1: Question is about dosage of a medicine for a particular disease.\n\n### Dosage of Eliquis for DVT/PE\n\n- **Standard Dosages for Adults:** The usual recommended dose of Eliquis (apixaban) for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE) is 10 mg taken orally twice daily for the first 7 days, followed by 5 mg taken orally twice daily [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\n- **Dose Adjustments for Specific Disease Conditions:** Dose adjustments may be necessary for patients with renal impairment or those taking concomitant medications that affect Eliquis metabolism. It is important to consult with a healthcare professional for specific recommendations.\n\n- **Dosing in Special Populations:** Special considerations should be given to elderly patients, pregnant women, and those with liver disease. The prescribing information should be reviewed for detailed guidance.\n\n### Side Effects of Eliquis\n\n- **Common Side Effects:** Some common side effects of Eliquis include bleeding, bruising, and nausea [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\n- **Rare but Serious Adverse Reactions:** Serious bleeding events, including intracranial and gastrointestinal bleeding, may occur. Patients should be monitored for signs of bleeding.\n\n- **Black Box Warnings:** Eliquis carries a black box warning for an increased risk of thrombotic events after premature discontinuation and spinal/epidural hematoma risk in patients undergoing spinal procedures.\n\nFor each of the suggestions please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The answer does not specify the standard dosage of Eliquis for children with DVT/PE. It only provides dosage information for adults and mentions special populations in general terms, without specific details for children."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response mentions special considerations for patients with liver disease but does not provide specific information on dose adjustments for hepatic impairment. It advises reviewing the prescribing information for detailed guidance rather than providing specific dosage adjustments."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis specifically for elderly patients with DVT/PE. It mentions that special considerations should be given to elderly patients, but does not provide specific dosage information for this group."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only mentions that special considerations should be given and that the prescribing information should be reviewed for detailed guidance, without providing specific dosage information for pregnant women."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It provides general dosage information and mentions special populations like elderly patients, pregnant women, and those with liver disease, but does not address lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of a medicine for a particular disease.\n\nFor the treatment of Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE) with Eliquis (apixaban), the standard dosage for adults is typically 10 mg taken orally twice daily for the first 7 days, followed by 5 mg taken orally twice daily thereafter. Dose adjustments may be necessary based on specific conditions or patient characteristics, such as renal function, but specific details are not provided in the chunks available.\n\nRegarding side effects, common side effects of Eliquis include bleeding complications, such as nosebleeds, bruising, or bleeding gums. Rare but serious adverse reactions can include severe bleeding events. Eliquis also carries a black box warning for the risk of spinal or epidural hematomas, which can result in long-term or permanent paralysis, especially in patients undergoing spinal procedures.\n\nFor each of the suggestions, please look into the citations for verification. \n\n[Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html)",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response specifies the standard dosage of Eliquis for adults, not for children. It does not provide information about the pediatric dosage for DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The answer does not provide specific details about dose adjustments for patients with renal impairment. It mentions that dose adjustments may be necessary based on conditions such as renal function but lacks specific information on how the dosage should be adjusted."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only mentions that dose adjustments may be necessary based on specific conditions or patient characteristics, such as renal function, without providing details specific to hepatic impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response mentions that dose adjustments may be necessary based on specific conditions or patient characteristics, such as renal function, but it does not provide specific information on dose adjustments for other disease conditions."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response provides the standard dosage for adults in general but does not specify any adjustments or considerations specifically for elderly patients with DVT/PE. It mentions that dose adjustments may be necessary based on conditions like renal function but lacks specific details for elderly patients."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It provides the standard dosage for adults but does not address dosage recommendations or considerations for pregnant women specifically."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides the standard adult dosage without addressing lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "For the treatment of Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE) with Eliquis (apixaban), the standard dosage for adults is typically 10 mg taken orally twice daily for the first 7 days, followed by 5 mg taken orally twice daily thereafter. However, specific dosing adjustments may be necessary based on individual patient conditions, such as renal impairment or other medical considerations. It is important to consult with a healthcare professional for personalized dosing recommendations.\n\nCommon side effects of Eliquis include bleeding, bruising, and nausea. Rare but serious adverse reactions can include severe bleeding events. Eliquis also carries a black box warning regarding the increased risk of thrombotic events if the medication is discontinued prematurely without adequate alternative anticoagulation [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response specifies the standard dosage of Eliquis for adults, not children. It does not provide any dosing information specific to children with DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response mentions that specific dosing adjustments may be necessary based on individual patient conditions, such as renal impairment, but does not provide detailed information on what those adjustments might be. Therefore, it does not fully satisfy the requirement to include information on dose adjustments for patients with renal impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only mentions dose adjustments based on renal impairment or other medical considerations without specifying hepatic impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response mentions that specific dosing adjustments may be necessary based on individual patient conditions such as renal impairment or other medical considerations, but it does not provide detailed information on dose adjustments for specific disease conditions. Therefore, it does not satisfy the test requirement."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specifically address the dosage of Eliquis for elderly patients with DVT/PE. It provides general dosage information for adults but does not mention any specific adjustments or considerations for elderly patients. Therefore, it does not satisfy the test requirement."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It provides standard dosing information for adults in general but does not address pregnancy-specific guidelines."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It provides general dosing information for adults and mentions the need for consultation with a healthcare professional for personalized recommendations, but it does not address lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of Eliquis for a case of DVT/PE, which falls into category 1: Question is about dosage of a medicine for a particular disease.\n\n### Dosage of Eliquis for DVT/PE\n\n- **Standard Dosages for Adults**: The typical dosage for Eliquis (apixaban) in the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE) is 10 mg taken orally twice daily for the first 7 days, followed by 5 mg taken orally twice daily [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\n- **Dose Adjustments for Specific Disease Conditions**: Dose adjustments may be necessary for patients with renal impairment or those at increased risk of bleeding. It is important to consult the prescribing information or a healthcare professional for specific adjustments [Chunk 1](https://www.eliquis.bmscustomerconnect.com/vte/faq).\n\n- **Dosing in Special Populations**: For elderly patients, pregnant women, or those with other specific conditions, dosing may need to be adjusted. It is crucial to consult with a healthcare provider for personalized dosing recommendations [Chunk 1](https://www.eliquis.bmscustomerconnect.com/vte/faq).\n\n### Side Effects of Eliquis\n\n- **Common Side Effects**: Some common side effects of Eliquis include bleeding, bruising, and nausea [Chunk 1](https://www.eliquis.bmscustomerconnect.com/vte/faq).\n\n- **Rare but Serious Adverse Reactions**: Serious bleeding events can occur, which may be life-threatening. Other serious reactions include allergic reactions [Chunk 1](https://www.eliquis.bmscustomerconnect.com/vte/faq).\n\n- **Black Box Warnings**: Eliquis has a black box warning for the risk of spinal or epidural hematomas, which can occur in patients undergoing spinal procedures [Chunk 1](https://www.eliquis.bmscustomerconnect.com/vte/faq).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for children with DVT/PE. It only provides dosage information for adults and mentions dose adjustments for specific conditions and populations such as elderly patients and pregnant women."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only mentions dose adjustments for renal impairment, increased risk of bleeding, and special populations like the elderly and pregnant women."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response mentions that dosing for elderly patients may need to be adjusted and recommends consulting a healthcare provider for personalized dosing recommendations. However, it does not specify the actual dosage for elderly patients with DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the exact dosage of Eliquis for pregnant women with DVT/PE. It only mentions that dosing may need to be adjusted for special populations like pregnant women and advises consulting a healthcare provider for personalized recommendations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specifically address the dosage of Eliquis for lactating women with DVT/PE. It only mentions that dosing may need to be adjusted for special populations, including pregnant women, but does not provide specific information for lactating women."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of Eliquis for a case of DVT/PE, which falls into category 1: Question is about dosage of a medicine for a particular disease.\n\n**Dosage of Eliquis for DVT/PE:**\n\n- **Standard Dosages for Adults:**\n  Eliquis (apixaban) is typically prescribed for the treatment of DVT (Deep Vein Thrombosis) and PE (Pulmonary Embolism). The standard dosage for adults is 10 mg taken orally twice daily for the first 7 days, followed by 5 mg taken orally twice daily [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\n- **Dose Adjustments for Specific Disease Conditions:**\n  Dose adjustments may be necessary based on the patient's renal function and other individual health conditions. It is important to consult with a healthcare provider for personalized dosing recommendations.\n\n- **Dosing in Special Populations:**\n  Special populations such as the elderly or those with renal impairment may require dose adjustments. Pregnant women should consult their healthcare provider to understand the risks and benefits of using Eliquis.\n\n**Side Effects of Eliquis:**\n\n- **Common Side Effects:**\n  Common side effects include bleeding, bruising, and nausea [Chunk 1](https://www.eliquis.bmscustomerconnect.com/content/commercial/us/eliquisbmscustomerconnect/en/vte/faq.html).\n\n- **Rare but Serious Adverse Reactions:**\n  Serious bleeding events can occur, which may be life-threatening. Patients should seek immediate medical attention if they experience symptoms such as unusual bleeding or bruising, coughing up blood, or blood in urine or stools.\n\n- **Black Box Warnings:**\n  Eliquis has a black box warning for an increased risk of thrombotic events if the medication is discontinued prematurely. It is crucial to follow the prescribed regimen and consult a healthcare provider before stopping the medication.\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response only specifies the standard dosage of Eliquis for adults, not for children. There is no information provided about the dosage for children with DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only mentions dose adjustments for renal function and other individual health conditions, as well as special populations like the elderly and pregnant women."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": true,
+                                    "reason": ""
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response mentions that special populations such as the elderly may require dose adjustments but does not specify the exact dosage for elderly patients with DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It merely advises pregnant women to consult their healthcare provider for risks and benefits, without providing specific dosage information."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It mentions special populations such as the elderly or those with renal impairment but does not specifically address lactating women."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "What dose of Eliquis is prescribed for deep vein thrombosis or pulmonary embolism?",
+                    "execution_result": [
+                        {
+                            "answer": "The question is about the dosage of Eliquis for deep vein thrombosis (DVT) or pulmonary embolism (PE), which falls under category 1: Question is about dosage of a medicine for a particular disease.\n\n**Dosage of Eliquis for DVT or PE:**\n\nEliquis is prescribed to treat blood clots in the veins of the legs (deep vein thrombosis \u2013 DVT) or lungs (pulmonary embolism \u2013 PE), and to reduce the risk of them occurring again. Eliquis is available in two different tablets: a 2.5 mg tablet and a 5 mg tablet. Your doctor or healthcare provider will determine the appropriate dose for you [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n**Side Effects of Eliquis:**\n\n- **Common Side Effects:** While specific common side effects are not detailed in the provided chunks, patients are encouraged to report negative side effects of prescription drugs to the FDA [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n- **Rare but Serious Adverse Reactions:** The chunks do not provide specific details on rare but serious adverse reactions.\n\n- **Black Box Warnings:** For people taking Eliquis for atrial fibrillation, it is important not to stop taking the medication without consulting the prescribing doctor, as stopping increases the risk of having a stroke [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage regimen for Eliquis in adults with DVT/PE. It only mentions that Eliquis comes in 2.5 mg and 5 mg tablets and that a healthcare provider will determine the appropriate dose. The standard dosing regimen typically involves a specific initial dose followed by a maintenance dose, which is not detailed in the response."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for children with DVT/PE. It only mentions the dosages available for general treatment without addressing pediatric dosage specifically."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include any information on dose adjustments of Eliquis for patients with renal impairment. It only discusses the dosage for DVT or PE, side effects, and a warning about stopping the medication."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only discusses the dosage for DVT or PE and provides some information on side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only discusses the dosage for DVT or PE and some general side effect information."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for elderly patients with DVT/PE. It only provides general dosage information without addressing adjustments or considerations specific to elderly patients."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general information about the dosage of Eliquis for DVT or PE without addressing specific considerations for pregnant women."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides general information about the dosage for DVT/PE without addressing lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of Eliquis for deep vein thrombosis (DVT) or pulmonary embolism (PE), which falls under category 1: Question is about dosage of a medicine for a particular disease.\n\n### Dosage Information\nEliquis (apixaban) is prescribed to treat blood clots in the veins of the legs (deep vein thrombosis \u2013 DVT) or lungs (pulmonary embolism \u2013 PE), and to reduce the risk of them occurring again. It is available in two different tablet strengths: 2.5 mg and 5 mg. Your doctor or healthcare provider will determine the appropriate dosage for you [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n### Side Effects\n- **Common Side Effects**: The common side effects of Eliquis may include bleeding, nausea, and anemia.\n- **Rare but Serious Adverse Reactions**: Serious bleeding events are a potential risk with Eliquis.\n- **Black Box Warnings**: There is a warning about the increased risk of stroke if Eliquis is discontinued abruptly without a doctor's advice [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for adults with DVT/PE. It only mentions that Eliquis is available in 2.5 mg and 5 mg tablet strengths and that the appropriate dosage will be determined by a healthcare provider. The specific dosage regimen for treating DVT/PE is not provided."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response provides dosage information for Eliquis in general terms but does not specify the dosage for children with DVT/PE. It only mentions that the dosage will be determined by a healthcare provider, which does not meet the requirement of specifying the standard dosage for children."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The provided answer does not include any information on dose adjustments of Eliquis for patients with renal impairment. It only discusses the general dosage for DVT and PE, as well as side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response provided does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only discusses dosage for DVT and PE, side effects, and warnings. Therefore, it does not satisfy the test criteria."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only provides general information about the dosage for DVT and PE and mentions side effects and warnings."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for elderly patients with DVT/PE. It provides general information about the drug's available strengths and mentions that the appropriate dosage will be determined by a healthcare provider. However, it does not address dosage specifically for elderly patients."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It provides general dosage information and side effects but does not address the specific population of pregnant women."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides general dosage information without addressing lactating women specifically."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of Eliquis for deep vein thrombosis (DVT) or pulmonary embolism (PE). Here is the information based on the provided chunks:\n\n### Dosage of Eliquis for DVT or PE:\n- Eliquis is available in two different tablet strengths: 2.5 mg and 5 mg. The specific dosage for treating blood clots in the veins of the legs (DVT) or lungs (PE) is determined by a healthcare provider [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n### Side Effects of Eliquis:\n- **Common side effects** include bleeding complications, such as nosebleeds, bleeding gums, heavy menstrual bleeding, or bleeding from cuts that take a long time to stop.\n- **Rare but serious adverse reactions** include severe bleeding, allergic reactions, and liver enzyme changes.\n- **Black box warnings** highlight the increased risk of stroke if Eliquis is discontinued abruptly without a healthcare provider's guidance [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not provide the standard dosage of Eliquis for adults with DVT/PE. It only mentions that the dosage is determined by a healthcare provider and does not specify the typical dosing regimen, such as the usual initiation and maintenance doses."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for children with DVT/PE. It only mentions the available tablet strengths (2.5 mg and 5 mg) and notes that the specific dosage is determined by a healthcare provider. There is no information provided about pediatric dosage."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include any information about dose adjustments of Eliquis for patients with renal impairment. It only covers the general dosage information for DVT or PE and the side effects of Eliquis."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only covers the general dosage for DVT or PE and side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only provides the general dosage information for DVT and PE and mentions side effects and black box warnings."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The answer provided does not specify the dosage of Eliquis for elderly patients with DVT/PE. It only mentions the general availability of Eliquis in 2.5 mg and 5 mg tablets and states that the specific dosage is determined by a healthcare provider."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response provides general dosage information for Eliquis for DVT or PE but does not specify any dosage information for pregnant women with DVT/PE. The test was to check for specific dosage details for pregnant women, which are not included in the response."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It only provides general dosage information for DVT or PE and mentions side effects and warnings. There is no mention of lactating women or specific dosage adjustments for them."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question is about the dosage of a medicine for a particular disease, specifically Eliquis for deep vein thrombosis (DVT) or pulmonary embolism (PE).\n\n### Dosage of Eliquis for DVT or PE\n\nEliquis is available in two different tablet strengths: 2.5 mg and 5 mg. Your doctor or healthcare provider will determine the appropriate dose for you based on your specific condition [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n### Side Effects of Eliquis\n\n- **Common side effects**: May include bleeding, bruising, or nausea.\n- **Rare but serious adverse reactions**: Can include severe bleeding and allergic reactions.\n- **Black box warnings**: Stopping Eliquis increases the risk of having a stroke, especially in people taking it for atrial fibrillation [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\nFor each of the suggestions, please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for adults with DVT/PE. It mentions the available tablet strengths and that the dose should be determined by a healthcare provider, but does not provide the standard dosage information."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage of Eliquis for children with DVT/PE. It only mentions that Eliquis is available in 2.5 mg and 5 mg tablet strengths and that the appropriate dose is determined by a healthcare provider. No specific dosage information for children is provided."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The provided answer does not include any information on dose adjustments of Eliquis for patients with renal impairment. It only discusses the general dosage for DVT or PE and mentions side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with hepatic impairment. It only discusses the general dosage for DVT or PE and some side effects. There is no mention of how hepatic impairment affects Eliquis dosing."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only provides general dosage information for DVT or PE and mentions side effects."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis specifically for elderly patients with DVT/PE. It provides general information about Eliquis dosages but does not address the particular needs or considerations for elderly patients."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general information about Eliquis dosage and side effects without addressing the specific needs or considerations for pregnant women."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It provides general information about dosages and side effects, but lacks specific guidance for lactating women."
+                                }
+                            ]
+                        },
+                        {
+                            "answer": "The question falls into category 1: Question is about dosage of a medicine for a particular disease.\n\n### Dosage of Eliquis for Deep Vein Thrombosis (DVT) or Pulmonary Embolism (PE):\n\nEliquis is a prescription medicine used to treat blood clots in the veins of the legs (deep vein thrombosis \u2013 DVT) or lungs (pulmonary embolism \u2013 PE), and reduce the risk of them occurring again. The standard dosages available are 2.5 mg and 5 mg tablets. Your doctor or healthcare provider will determine the appropriate dose for you [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\n### Side Effects of Eliquis:\n\n- **Common Side Effects:** These may include bleeding, bruising, and nausea.\n- **Rare but Serious Adverse Reactions:** These can include severe bleeding or allergic reactions.\n- **Black Box Warnings:** Eliquis has a warning for increased risk of stroke if the medication is stopped abruptly without consulting a healthcare provider [Chunk 9](https://www.eliquis.bmscustomerconnect.com/vte/about-vte).\n\nFor each of the suggestions please look into the citations for verification.",
+                            "test_cases": [
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for adults with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the standard dosage regimen for Eliquis for adults with DVT/PE. It only mentions the available tablet strengths (2.5 mg and 5 mg) without providing information on the dosing schedule or amount typically prescribed for the treatment of DVT/PE."
+                                },
+                                {
+                                    "test_case": "The response specifies the standard dosage of Eliquis for children with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response provided does not specify the standard dosage of Eliquis for children with DVT/PE. It only mentions dosages for adults and general information about the medication, without addressing pediatric use."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with renal impairment.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with renal impairment."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with hepatic impairment.",
+                                    "passed": false,
+                                    "reason": "The provided answer does not include any information or mention about dose adjustments of Eliquis for patients with hepatic impairment. It only covers the general dosage for DVT or PE and possible side effects."
+                                },
+                                {
+                                    "test_case": "The response includes information on dose adjustments of Eliquis for patients with other specific disease conditions.",
+                                    "passed": false,
+                                    "reason": "The response does not include information on dose adjustments of Eliquis for patients with other specific disease conditions. It only discusses standard dosages for DVT and PE, and mentions side effects and black box warnings."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for elderly patients with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specifically address dosage adjustments or recommendations for elderly patients with DVT/PE. It only provides general dosage information and advises consulting a healthcare provider for specific recommendations."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for pregnant women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for pregnant women with DVT/PE. It only provides general dosage information and side effects for Eliquis without addressing any specific considerations for pregnant women."
+                                },
+                                {
+                                    "test_case": "The response specifies the dosage of Eliquis for lactating women with DVT/PE.",
+                                    "passed": false,
+                                    "reason": "The response does not specify the dosage of Eliquis for lactating women with DVT/PE. It provides general information about Eliquis dosage for DVT/PE but does not address lactating women specifically."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "uuid": "5f51801f-ea4d-4a23-9f45-910b2f776235",
+        "name": "medLLM",
+        "description": "This dataset contains the test cases for evaluating the responses of a medical chatbot regarding the dosing of Eliquis for DVT/PE",
+        "run_date": "2024-12-03",
+        "run_by": "John Doe",
+        "run_time": "23:40:40",
+        "run_duration": "00:04:15"
+    },
+    "metrics": [
+        {
+            "metric_name": "Accuracy",
+            "metric_result": 0.11666666666666667,
+            "threshold": null,
+            "metric_result_question_wise": [
+                0.11666666666666667
+            ],
+            "metric_result_question_test_wise": [
+                [
+                    0.5333333333333333,
+                    0.0,
+                    0.2,
+                    0.0,
+                    0.2,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "metric_name": "GeneralStats",
+            "metric_result": {
+                "test_cases": 50,
+                "paraphrased_questions": 10,
+                "iterations": 5,
+                "total_cases": 250,
+                "issues_found": 8
+            },
+            "threshold": null
+        },
+        {
+            "metric_name": "HallucinationRate",
+            "metric_result": 0.78,
+            "threshold": null
+        },
+        {
+            "metric_name": "LLMDriftRate",
+            "metric_result": 0.12,
+            "threshold": null
+        }
+    ]
+}
