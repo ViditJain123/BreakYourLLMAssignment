@@ -114,44 +114,47 @@ function PreviousResults() {
           {/* Title with UUID */}
           <h2 className="text-xl font-bold mb-4">Test Results: {testResults.uuid}</h2>
 
-          {/* Dropdown: Main Questions */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              Select Main Question
-            </label>
-            <select
-              className="border border-gray-300 rounded p-2 w-full md:w-1/2"
-              value={selectedMainQuestion}
-              onChange={(e) => setSelectedMainQuestion(e.target.value)}
-            >
-              <option value="">-- Select Main Question --</option>
-              {testResults.main_questions.map((mq, idx) => (
-                <option key={idx} value={mq}>
-                  {mq}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Dropdown: Paraphrased Questions */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              Select Paraphrased Question
-            </label>
-            <select
-              className="border border-gray-300 rounded p-2 w-full md:w-1/2"
-              value={selectedParaphrasedQuestion}
-              onChange={(e) => setSelectedParaphrasedQuestion(e.target.value)}
-            >
-              <option value="">-- Select Paraphrased Question --</option>
-              {testResults.paraphrased_questions.map((arr, idx) =>
-                arr.map((pq, subIdx) => (
-                  <option key={`${idx}-${subIdx}`} value={pq}>
-                    {pq}
+          {/* Dropdowns in the same line for medium screens and above */}
+          <div className="mb-4 flex flex-col md:flex-row gap-4">
+            {/* Main Question Dropdown */}
+            <div className="flex-1">
+              <label className="block text-gray-700 text-sm font-bold mb-2">
+                Select Main Question
+              </label>
+              <select
+                className="border border-gray-300 rounded p-2 w-full"
+                value={selectedMainQuestion}
+                onChange={(e) => setSelectedMainQuestion(e.target.value)}
+              >
+                <option value="">-- Select Main Question --</option>
+                {testResults.main_questions.map((mq, idx) => (
+                  <option key={idx} value={mq}>
+                    {mq}
                   </option>
-                ))
-              )}
-            </select>
+                ))}
+              </select>
+            </div>
+
+            {/* Paraphrased Question Dropdown */}
+            <div className="flex-1">
+              <label className="block text-gray-700 text-sm font-bold mb-2">
+                Select Paraphrased Question
+              </label>
+              <select
+                className="border border-gray-300 rounded p-2 w-full"
+                value={selectedParaphrasedQuestion}
+                onChange={(e) => setSelectedParaphrasedQuestion(e.target.value)}
+              >
+                <option value="">-- Select Paraphrased Question --</option>
+                {testResults.paraphrased_questions.map((arr, idx) =>
+                  arr.map((pq, subIdx) => (
+                    <option key={`${idx}-${subIdx}`} value={pq}>
+                      {pq}
+                    </option>
+                  ))
+                )}
+              </select>
+            </div>
           </div>
 
           {/* Test Cases Table (only shown if both dropdowns are selected) */}
