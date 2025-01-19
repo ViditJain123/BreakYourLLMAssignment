@@ -1,4 +1,3 @@
-// App.jsx
 import './App.css'
 import Accuracy from './components/Accuracy'
 import MainDetailCard from './components/MainDetailCard'
@@ -21,10 +20,24 @@ function App() {
         LLM Test Results
       </h1>
       
-      <div className="grid grid-cols-3 gap-4 mb-4">
-        <TestStatistics />
-        <Accuracy />
-        <div className="bg-white p-4 rounded shadow flex justify-center">
+      {/* 
+        Use grid with 3 columns and 'items-stretch' so all columns 
+        match in height, and wrap each column in the same Tailwind 
+        card styling. 
+      */}
+      <div className="grid grid-cols-3 gap-4 mb-4 items-stretch">
+        {/* LEFT COLUMN */}
+        <div className="bg-white p-4 rounded shadow flex items-center justify-center">
+          <TestStatistics />
+        </div>
+        
+        {/* MIDDLE COLUMN */}
+        <div className="bg-white p-4 rounded shadow flex items-center justify-center">
+          <Accuracy />
+        </div>
+        
+        {/* RIGHT COLUMN */}
+        <div className="bg-white p-4 rounded shadow flex items-center justify-center">
           <div className="grid grid-cols-2 gap-4">
             <MainDetailCard
               heading="Hallucination Rate"
@@ -49,6 +62,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="flex gap-4">
         <div className="w-1/2">
           <AccuracyGraph />

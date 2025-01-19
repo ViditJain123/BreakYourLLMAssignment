@@ -5,7 +5,7 @@ function TestStatistics() {
   const data = jsonData.metrics[1].metric_result;
 
   return (
-    <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-6">
+    <div className="max-w-md w-full rounded-lg p-6">
       <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
         Test Statistics
       </h1>
